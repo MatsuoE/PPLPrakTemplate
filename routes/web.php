@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\cplprodiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [cplprodiController::class, 'index']);
+Route::resource('cplprodi', cplprodiController::class);
+
+
+
 Route::get('/blank', function () {
     return view('blank');
 });
@@ -31,3 +34,4 @@ Route::get('/tabs', function () {
 Route::get('/calendar', function () {
     return view('calendar');
 });
+
