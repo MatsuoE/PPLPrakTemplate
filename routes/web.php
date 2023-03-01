@@ -14,6 +14,10 @@ use App\Http\Controllers\cplprodiController;
 |
 */
 
+
+Route::get('/cplprodi', function () {
+    return redirect('/');
+});
 Route::get('/', [cplprodiController::class, 'index']);
 Route::resource('cplprodi', cplprodiController::class);
 

@@ -5,7 +5,7 @@
     </div>
 
     <nav class="text-white text-base font-semibold pt-3">
-        <a href="/" class="flex items-center {{Request::is('/', '/cplprodi') ? 'active-nav-link' : 'opacity-75 hover:opacity-100'}}  text-white py-4 pl-6 nav-item">
+        <a href="/" class="flex items-center {{Request::is('/') ? 'active-nav-link' : 'opacity-75 hover:opacity-100'}}  text-white py-4 pl-6 nav-item">
             <i class="fas fa-tachometer-alt mr-3"></i>
             CPL Prodi
         </a>
